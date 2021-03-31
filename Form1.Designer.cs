@@ -56,6 +56,7 @@
             this.btnNewNumbers.TabIndex = 0;
             this.btnNewNumbers.Text = "New List";
             this.btnNewNumbers.UseVisualStyleBackColor = true;
+            this.btnNewNumbers.Click += new System.EventHandler(this.btnNewNumbers_Click);
             // 
             // btnSortNumbers
             // 
@@ -91,6 +92,7 @@
             this.btnNewHeroes.TabIndex = 5;
             this.btnNewHeroes.Text = "New Heroes";
             this.btnNewHeroes.UseVisualStyleBackColor = true;
+            this.btnNewHeroes.Click += new System.EventHandler(this.btnNewHeroes_Click);
             // 
             // btnSortHeroes
             // 

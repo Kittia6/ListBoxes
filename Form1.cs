@@ -46,5 +46,25 @@ namespace Listboxes
             lstHeroes.DataSource = heroes;
             lblStatus.Text = "Status: heroes sorted";
         }
+
+        private void btnNewNumbers_Click(object sender, EventArgs e)
+        {
+            numbers.Clear();
+            for (int i = 0; i < 20; i++)
+                numbers.Add(generator.Next(100));
+            lstNumbers.DataSource = null;
+            lstNumbers.DataSource = numbers;
+            lblStatus.Text = "Status: new numbers list";
+        }
+
+        private void btnNewHeroes_Click(object sender, EventArgs e)
+        {
+            heroes.Clear();
+            heroes.Add("Superman");
+            heroes.Add("Batman");
+            lstHeroes.DataSource = null;
+            lstHeroes.DataSource = heroes;
+            lblStatus.Text = "Status: new hero list";
+        }
     }
 }
