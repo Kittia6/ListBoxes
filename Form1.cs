@@ -15,6 +15,7 @@ namespace Listboxes
         List<int> numbers = new List<int>();
         List<string> heroes = new List<string>();
         Random generator = new Random();
+        int numIndex;
         public lists()
         {
             InitializeComponent();
@@ -65,6 +66,18 @@ namespace Listboxes
             lstHeroes.DataSource = null;
             lstHeroes.DataSource = heroes;
             lblStatus.Text = "Status: new hero list";
+        }
+
+        private void btnRemoveNumber_Click(object sender, EventArgs e)
+        {
+            if (lstNumbers.SelectedIndex >= 0)
+            {
+                numIndex = lstNumbers.SelectedIndex;
+                numbers.RemoveAt(numIndex);
+                lstNumbers.DataSource = null;
+                lstNumbers.DataSource = numbers;
+                lblStatus.Text = "Status: number removed";
+            }
         }
     }
 }
