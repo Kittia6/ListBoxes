@@ -1,6 +1,6 @@
 ﻿namespace Listboxes
 {
-    partial class Form1
+    partial class lists
     {
         /// <summary>
         /// Required designer variable.
@@ -204,7 +204,7 @@
             this.lblStatus.TabIndex = 18;
             this.lblStatus.Text = "Status:";
             // 
-            // Form1
+            // lists
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,8 +227,9 @@
             this.Controls.Add(this.lstNumbers);
             this.Controls.Add(this.btnSortNumbers);
             this.Controls.Add(this.btnNewNumbers);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "lists";
+            this.Text = "Lists";
+            this.Load += new System.EventHandler(this.lists_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
