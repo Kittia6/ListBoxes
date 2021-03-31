@@ -26,9 +26,25 @@ namespace Listboxes
                 numbers.Add(generator.Next(100));
             lstNumbers.DataSource = numbers;
 
-            heroes.Add("Batman");
             heroes.Add("Superman");
+            heroes.Add("Batman");
             lstHeroes.DataSource = heroes;
+        }
+
+        private void btnSortNumbers_Click(object sender, EventArgs e)
+        {
+            numbers.Sort();
+            lstNumbers.DataSource = null;
+            lstNumbers.DataSource = numbers;
+            lblStatus.Text = "Status: numbers sorted";
+        }
+
+        private void btnSortHeroes_Click(object sender, EventArgs e)
+        {
+            heroes.Sort();
+            lstHeroes.DataSource = null;
+            lstHeroes.DataSource = heroes;
+            lblStatus.Text = "Status: heroes sorted";
         }
     }
 }

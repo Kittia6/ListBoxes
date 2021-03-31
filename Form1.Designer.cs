@@ -65,6 +65,7 @@
             this.btnSortNumbers.TabIndex = 1;
             this.btnSortNumbers.Text = "Sort";
             this.btnSortNumbers.UseVisualStyleBackColor = true;
+            this.btnSortNumbers.Click += new System.EventHandler(this.btnSortNumbers_Click);
             // 
             // lstNumbers
             // 
@@ -99,6 +100,7 @@
             this.btnSortHeroes.TabIndex = 6;
             this.btnSortHeroes.Text = "Sort";
             this.btnSortHeroes.UseVisualStyleBackColor = true;
+            this.btnSortHeroes.Click += new System.EventHandler(this.btnSortHeroes_Click);
             // 
             // btnRemoveNumber
             // 
