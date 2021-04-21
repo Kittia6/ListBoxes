@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: Listboxes, Configuration: Debug Any CPU ------
+1>  Listboxes -> C:\Users\kitti\Source\Repos\ListBoxes\bin\Debug\Listboxes.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
