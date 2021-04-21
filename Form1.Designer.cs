@@ -154,6 +154,7 @@
             this.btnRemoveHero.TabIndex = 10;
             this.btnRemoveHero.Text = "Remove";
             this.btnRemoveHero.UseVisualStyleBackColor = true;
+            this.btnRemoveHero.Click += new System.EventHandler(this.btnRemoveHero_Click);
             // 
             // txtAddHero
             // 
