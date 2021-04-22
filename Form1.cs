@@ -101,16 +101,37 @@ namespace Listboxes
         private void btnRemoveHero_Click(object sender, EventArgs e)
         {
             removeHero = txtRemoveHero.Text.Trim();
-            heroes.Remove(removeHero);
+            bool result = heroes.Remove(removeHero);
             lstHeroes.DataSource = null;
             lstHeroes.DataSource = heroes;
-            lblStatus.Text = $"Status: {removeHero} removed";
-
+            if (result)
+            {
+                lblStatus.Text = $"Status: {removeHero} removed";
+            }
+            else
+            {
+                lblStatus.Text = $"Status: Unsuccessful removal";
+            }
         }
 
         private void btnAddHero_Click(object sender, EventArgs e)
         {
+            addHero = txtAddHero.Text.Trim();
+            if (addHero == "")
+            {
+                return;
+            }
+            
+            if (heroes.Contains(addHero))
+            {
+                return;
+            }
 
+            heroes.Add(addHero);
+            lstHeroes.DataSource = null;
+            lstHeroes.DataSource = heroes;
+            lblStatus.Text = $"Status: {addHero} added";
+            txtAddHero.Text = "";
         }
 
     }
